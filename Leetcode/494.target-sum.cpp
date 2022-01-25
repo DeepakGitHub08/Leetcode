@@ -12,7 +12,7 @@ public:
             return map1[{curr, currTarget}];
         }
         if(curr == nums.size() - 1 && nums[curr] == abs(currTarget)){
-            if(nums[curr] == 0)return 2;
+            if(nums[curr] == 0)return 2;//corner case (imp)
             
             return 1;
         }
