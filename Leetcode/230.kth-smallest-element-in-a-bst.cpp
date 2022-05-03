@@ -20,6 +20,7 @@ class Solution {
 public:
 //use inorder to get the elements in increasing order
 //reeturn kth element from the array
+
     void inorder(TreeNode* node, vector<int>&array){
         if(!node)
             return;
@@ -31,7 +32,9 @@ public:
         vector<int> ans;
         inorder(root, ans);
         return ans[k-1];
+        
     }
 };
+
 // @lc code=end
 

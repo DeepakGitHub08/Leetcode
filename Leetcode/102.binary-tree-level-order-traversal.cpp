@@ -22,6 +22,7 @@
 // 3. push their decendant to queue.
 class Solution {
 public:
+
    vector<vector<int>> levelOrder(TreeNode *root) {
       vector<vector<int>> result;
       if (!root) return result;
@@ -41,6 +42,7 @@ public:
           result.push_back(crtLevel);
       }
       return result;
+        
   } 
 };
 // @lc code=end
